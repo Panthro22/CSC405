@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.4.0/gl-matrix.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.4.0/gl-matrix-min.js"></script>
+
+		<title>Interactive sphere WebGL Viewer</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="800"></canvas>
+		<div>
+			<label>Theta (Rotation around Y-axis): 0</label>
+			<input
+				id="thetaSlider"
+				type="range"
+				min="0"
+				max="6.28"
+				step="0.01"
+				value="0"
+			/>
+			<span>6.28</span>
+		</div>
+		<div>
+			<label>Phi (Rotation around X-axis): 0</label>
+			<input
+				id="phiSlider"
+				type="range"
+				min="0"
+				max="6.28"
+				step="0.01"
+				value="0"
+			/>
+			<span>6.28</span>
+		</div>
+		<div>
+			<label>Radius (Distance from object): 1</label>
+			<input
+				id="radiusSlider"
+				type="range"
+				min="1"
+				max="10"
+				step="0.1"
+				value="2"
+			/>
+			<span>10</span>
+		</div>
+
+		<script src="sphere.js"></script>
+	</body>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</html>
